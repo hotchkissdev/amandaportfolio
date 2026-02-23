@@ -45,6 +45,7 @@ export default function ProjectCard({
 
         {highlights && (
           <ul className="list-disc list-inside mb-4 space-y-1 text-gray-700">
+            <h4 className='text-lg font-semibold'>Highlights:</h4>
             {highlights.map((item, i) => (
               <li key={i}>{item}</li>
             ))}
