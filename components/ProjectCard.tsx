@@ -3,16 +3,20 @@ import Image from 'next/image';
 type ProjectCardProps = {
   title: string;
   subtitle: string;
+  description: string;
+  highlights?: string[];
   imageSrc: string;
   imageAlt: string;
   appLink: string;
-  githubLink: string;
+  githubLink?: string;
   reverse?: boolean;
 };
 
 export default function ProjectCard({
   title,
   subtitle,
+  description,
+  highlights,
   imageSrc,
   imageAlt,
   appLink,
@@ -21,7 +25,7 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <div
-      className={`flex gap-8 mb-12 items-center ${
+      className={`flex gap-20 mb-12 items-center ${
         reverse ? 'md:flex-row-reverse' : ''
       }`}
     >
@@ -31,12 +35,22 @@ export default function ProjectCard({
           alt={imageAlt}
           width={400}
           height={400}
-          className="rounded-lg shadow object-cover w-auto h-auto max-w-[300px] md:max-w-[400px]"
+          className="rounded-lg shadow-2xl object-cover w-auto h-auto max-w-[300px] md:max-w-[400px]"
         />
       </div>
       <div>
         <h2 className="text-2xl font-semibold mb-4">{title}</h2>
         <h3 className="text-xl mb-4">{subtitle}</h3>
+        <p className="mb-4">{description}</p>
+
+        {highlights && (
+          <ul className="list-disc list-inside mb-4 space-y-1 text-gray-700">
+            {highlights.map((item, i) => (
+              <li key={i}>{item}</li>
+            ))}
+          </ul>
+        )}
+
         <div className="flex space-x-4">
           <a
             href={appLink}
@@ -46,14 +60,16 @@ export default function ProjectCard({
           >
             Live Demo
           </a>
-          <a
-            href={githubLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-6 py-2 bg-indigo-600 text-white font-medium rounded shadow hover:bg-indigo-700 transform hover:-translate-y-0.5 transition"
-          >
-            View Code
-          </a>
+          {githubLink && (
+            <a
+              href={githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-6 py-2 bg-indigo-600 text-white font-medium rounded shadow hover:bg-indigo-700 transform hover:-translate-y-0.5 transition"
+            >
+              View Code
+            </a>
+          )}
         </div>
       </div>
     </div>

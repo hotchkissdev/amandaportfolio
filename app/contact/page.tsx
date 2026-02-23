@@ -4,61 +4,59 @@ export default function ContactPage() {
       <main className="max-w-5xl mx-auto px-4 py-8">
         <header className="text-center mb-5">
           <h1 className="text-4xl font-bold text-indigo-700">Amanda Hotchkiss</h1>
-          <h2 className="text-xl mt-2 text-gray-600">A Front-End Developer Based in Knoxville, TN, USA</h2>
+          <h2 className="text-xl mt-2 text-gray-600">Frontend Developer</h2>
         </header>
         
         <div className="flex justify-center mb-12">
           <a href="mailto:..." className="inline-block px-6 py-2 bg-indigo-600 text-white font-medium rounded shadow hover:bg-indigo-700 transform hover:-translate-y-0.5 transition">
-            Send Me a Message
+            Email Me
           </a>
         </div>
 
         <section className="text-lg text-gray-700 leading-relaxed mb-12">
-          <h3 className="text-2xl font-semibold mb-4">Hello!</h3>
+          <h3 className="text-2xl font-semibold mb-4">Let’s Work Together</h3>
           <p className="mb-4">
-            Thank you for visiting my page! Please feel free to contact me at{' '}
+            I’m currently open to frontend development opportunities, freelance projects, and technical collaboration.
+            If you're looking for a React or Next.js developer with production retail and e-commerce experience, I’d be glad to connect.
+            <br /><br />
+            The best way to reach me is via <a href="mailto:amanda.hotchkiss1011@gmail.com" className="text-indigo-600 underline">email</a> or <a href="https://www.linkedin.com/in/amanda-hotchkiss-1a4056134/" className="text-indigo-600 underline" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+          </p>
+
+          <h4 className="text-lg font-semibold">Email:</h4> 
+          <p className="mb-4">
             <a
               href="mailto:amanda.hotchkiss1011@gmail.com"
               className="text-indigo-600 underline"
             >
               amanda.hotchkiss1011@gmail.com
-            </a>{' '}
-            or on{' '}
-            <a
-              href="https://www.linkedin.com/in/amanda-hotchkiss-1a4056134/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-indigo-600 underline"
-            >
-              LinkedIn
-            </a>{' '}
-            to let me know what you think!
+            </a>
           </p>
+
+          <h4 className="text-lg font-semibold">LinkedIn:</h4> 
           <p className="mb-4">
-            I am also on Instagram (
             <a
-              href="https://www.instagram.com/hotchkiss_coding/"
+              href="https://www.linkedin.com/in/amandahotchkiss/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-indigo-600 underline"
             >
-              @hotchkiss_coding
+              linkedin.com/in/amandahotchkiss
             </a>
-            ), and most of my work is on{' '}
+          </p>
+
+          <h4 className="text-lg font-semibold">GitHub:</h4> 
+          <p className="mb-4">
             <a
-              href="https://github.com/hotkiss1011"
+              href="https://github.com/hotchkissdev"
               target="_blank"
               rel="noopener noreferrer"
               className="text-indigo-600 underline"
             >
-              GitHub
+              github.com/hotchkissdev
             </a>
-            .
           </p>
           <p>
-            I look forward to hearing from you and appreciate any tips or suggestions you may have.
-            <br />
-            Thank you! 😊
+            Based in Knoxville, TN — open to remote opportunities.
           </p>
         </section>
       </main>
