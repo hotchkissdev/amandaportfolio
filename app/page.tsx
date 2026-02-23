@@ -12,7 +12,7 @@ export default function HomePage() {
           <a href="mailto:amanda.hotchkiss1011@gmail.com" className="inline-block px-6 py-2 bg-indigo-600 text-white font-medium rounded shadow hover:bg-indigo-700 transform hover:-translate-y-0.5 transition" title="Email me">Email Me</a>
         </header>
 
-        <section className="flex flex-row w-full mb-12 items-center justify-between">
+        <section className="flex lg:flex-row flex-col w-full mb-12 items-center justify-between">
           <div className='flex flex-col w-1/2'>
             <Image
               src="/images/coding-selfie.jpg"
@@ -33,7 +33,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="flex flex-row w-full mb-12 items-center justify-between">
+        <section className="flex lg:flex-row flex-col-reverse w-full mb-12 items-center justify-between">
           <div className='flex flex-col w-1/2'>
             <h2 className="text-2xl font-semibold mb-4">Projects</h2>
             <p className="text-gray-400 mb-4">

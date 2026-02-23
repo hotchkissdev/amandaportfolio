@@ -25,8 +25,8 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <div
-      className={`flex gap-20 mb-12 items-center ${
-        reverse ? 'md:flex-row-reverse' : ''
+      className={`flex gap-20 mb-12 items-center flex-col ${
+        reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'
       }`}
     >
       <div className="flex justify-center">
