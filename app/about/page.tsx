@@ -38,13 +38,14 @@ export default function AboutPage() {
               My experience spans both enterprise and independent projects. In a corporate environment, I contributed to high-traffic marketing and product pages while assisting in a migration from WordPress to a modern Next.js + TypeScript stack.
               <br /><br />
               Independently, I’ve built:
-              <br /><br />
-              <ul className='list-disc list-inside'>
-                <li>A full-stack e-commerce platform with authentication, relational data modeling, and secure payments</li>
-                <li>API-driven React applications with controlled state and conditional rendering</li>
-                <li>JavaScript tools leveraging browser APIs, asynchronous logic, and DOM event systems</li>
-              </ul>
-              <br />
+            </p>
+            <ul className='list-disc list-inside'>
+              <li>A full-stack e-commerce platform with authentication, relational data modeling, and secure payments</li>
+              <li>API-driven React applications with controlled state and conditional rendering</li>
+              <li>JavaScript tools leveraging browser APIs, asynchronous logic, and DOM event systems</li>
+            </ul>
+            <br />
+            <p className="text-gray-700 mb-4">
               My current focus is strengthening React architecture, scalable UI patterns, and frontend performance optimization.
             </p>
           </div>
