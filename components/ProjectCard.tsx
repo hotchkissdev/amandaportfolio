@@ -35,7 +35,7 @@ export default function ProjectCard({
           alt={imageAlt}
           width={400}
           height={400}
-          className="rounded-lg shadow-2xl object-cover w-auto h-auto max-w-[300px] md:max-w-[400px]"
+          className="rounded-lg shadow-2xl object-cover w-auto h-auto max-w-75 md:max-w-100"
         />
       </div>
       <div>
