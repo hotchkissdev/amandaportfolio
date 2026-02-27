@@ -4,7 +4,7 @@ import './globals.css';
 
 export const metadata = {
   title: 'Amanda Hotchkiss - Portfolio',
-  description: 'A Front-End Developer Based in Knoxville, TN, USA',
+  description: 'Frontend Developer Based in Knoxville, TN, USA',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
