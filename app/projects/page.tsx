@@ -84,9 +84,14 @@ const projects = [
 export default function ProjectsPage() {
   return (
     <>
-      <main className="max-w-5xl mx-auto px-4 py-8">
-        <header className="mb-12 text-center gap-5">
-          <h1 className="text-4xl font-bold text-indigo-700">My Projects</h1>
+      <main className="mx-auto max-w-6xl px-4 py-10 bg-gradient-to-b from-white via-purple-50/30 to-white">
+        <header className="mb-14 text-center">
+          <h1 className="text-4xl font-bold bg-linear-to-r from-indigo-800 to-purple-300 bg-clip-text text-transparent pb-3">
+            My Projects
+          </h1>
+          <p className="text-gray-600">
+            A selection of frontend and full-stack work focused on clean UI, real-world functionality, and maintainable architecture.
+          </p>
         </header>
 
         {projects.map((project, index) => (

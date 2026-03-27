@@ -1,65 +1,112 @@
 export default function ContactPage() {
   return (
-    <>
-      <main className="max-w-5xl mx-auto px-4 py-8">
-        <header className="text-center mb-5">
-          <h1 className="text-4xl font-bold text-indigo-700">Amanda Hotchkiss</h1>
-          <h2 className="text-xl mt-2 text-gray-600">Frontend Developer</h2>
-        </header>
-        
-        <div className="flex justify-center mb-12">
-          <a href="mailto:..." className="inline-block px-6 py-2 bg-indigo-600 text-white font-medium rounded shadow hover:bg-indigo-700 transform hover:-translate-y-0.5 transition">
-            Email Me
-          </a>
+    <main className="mx-auto max-w-6xl px-4 py-10">
+      <section className="relative overflow-hidden rounded-3xl border border-purple-200/70 bg-linear-to-br from-white via-purple-50/40 to-white px-6 py-14 shadow-[0_12px_40px_rgba(139,92,246,0.08)] md:px-10">
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute left-0 top-0 h-48 w-48 rounded-full bg-purple-200/30 blur-3xl" />
+          <div className="absolute bottom-0 right-0 h-64 w-64 rounded-full bg-indigo-200/20 blur-3xl" />
         </div>
 
-        <section className="text-lg text-gray-700 leading-relaxed mb-12">
-          <h3 className="text-2xl font-semibold mb-4">Let’s Work Together</h3>
-          <p className="mb-4">
-            I’m currently open to frontend development opportunities, freelance projects, and technical collaboration.
-            If you're looking for a React or Next.js developer with production retail and e-commerce experience, I’d be glad to connect.
-            <br /><br />
-            The best way to reach me is via <a href="mailto:amanda.hotchkiss1011@gmail.com" className="text-indigo-600 underline">email</a> or <a href="https://www.linkedin.com/in/amanda-hotchkiss-1a4056134/" className="text-indigo-600 underline" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+        <header className="mx-auto max-w-3xl text-center">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-purple-600/80">
+            Contact
           </p>
 
-          <h4 className="text-lg font-semibold">Email:</h4> 
-          <p className="mb-4">
+          <h1 className="mb-4 bg-linear-to-r from-indigo-700 to-purple-600 bg-clip-text text-4xl font-bold tracking-tight text-transparent md:text-5xl">
+            Let’s Work Together
+          </h1>
+
+          <p className="mx-auto mb-8 max-w-2xl text-lg leading-8 text-gray-700">
+            I’m currently open to frontend development opportunities, freelance projects, and technical collaboration.
+          </p>
+
+          <a
+            href="mailto:amanda.hotchkiss1011@gmail.com"
+            className="inline-flex items-center justify-center rounded-xl bg-purple-600 px-6 py-3 font-medium text-white shadow-md transition duration-200 hover:-translate-y-0.5 hover:bg-purple-700"
+          >
+            Email Me
+          </a>
+        </header>
+      </section>
+
+      <section className="mt-12 grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+        <div className="rounded-3xl border border-purple-200/70 bg-white/90 p-6 shadow-[0_10px_30px_rgba(139,92,246,0.08)] md:p-8">
+          <h2 className="mb-4 text-2xl font-semibold tracking-tight text-gray-900">
+            Get in Touch
+          </h2>
+
+          <p className="mb-6 leading-8 text-gray-700">
+            If you’re looking for a React or Next.js developer with production retail and e-commerce experience, I’d be glad to connect.
+          </p>
+
+          <p className="leading-8 text-gray-700">
+            The best way to reach me is via{" "}
             <a
               href="mailto:amanda.hotchkiss1011@gmail.com"
-              className="text-indigo-600 underline"
+              className="text-purple-600 underline transition hover:text-purple-700"
             >
-              amanda.hotchkiss1011@gmail.com
-            </a>
-          </p>
-
-          <h4 className="text-lg font-semibold">LinkedIn:</h4> 
-          <p className="mb-4">
+              email
+            </a>{" "}
+            or{" "}
             <a
               href="https://www.linkedin.com/in/amandahotchkiss/"
+              className="text-purple-600 underline transition hover:text-purple-700"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-indigo-600 underline"
             >
-              linkedin.com/in/amandahotchkiss
+              LinkedIn
             </a>
+            .
           </p>
+        </div>
 
-          <h4 className="text-lg font-semibold">GitHub:</h4> 
-          <p className="mb-4">
-            <a
-              href="https://github.com/hotchkissdev"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-indigo-600 underline"
-            >
-              github.com/hotchkissdev
-            </a>
-          </p>
-          <p>
-            Based in Knoxville, TN — open to remote opportunities.
-          </p>
-        </section>
-      </main>
-    </>
+        <div className="rounded-3xl border border-purple-200/70 bg-white/90 p-6 shadow-[0_10px_30px_rgba(139,92,246,0.08)] md:p-8">
+          <h2 className="mb-6 text-2xl font-semibold tracking-tight text-gray-900">
+            Contact Details
+          </h2>
+
+          <div className="space-y-6 text-gray-700">
+            <div>
+              <h3 className="mb-2 text-lg font-semibold text-gray-900">Email</h3>
+              <a
+                href="mailto:amanda.hotchkiss1011@gmail.com"
+                className="text-purple-600 underline transition hover:text-purple-700"
+              >
+                amanda.hotchkiss1011@gmail.com
+              </a>
+            </div>
+
+            <div>
+              <h3 className="mb-2 text-lg font-semibold text-gray-900">LinkedIn</h3>
+              <a
+                href="https://www.linkedin.com/in/amandahotchkiss/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-purple-600 underline transition hover:text-purple-700"
+              >
+                linkedin.com/in/amandahotchkiss
+              </a>
+            </div>
+
+            <div>
+              <h3 className="mb-2 text-lg font-semibold text-gray-900">GitHub</h3>
+              <a
+                href="https://github.com/hotchkissdev"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-purple-600 underline transition hover:text-purple-700"
+              >
+                github.com/hotchkissdev
+              </a>
+            </div>
+
+            <div>
+              <h3 className="mb-2 text-lg font-semibold text-gray-900">Location</h3>
+              <p>Knoxville, TN — open to remote opportunities</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
